@@ -9,10 +9,12 @@ on IBM BlueMix. The main features of the module are:
 * search of VCAP services by name and pattern
 * automatic initialization of common services
 
+
 ## How to Install
 ```bash
 npm install bluemix
 ```
+
 
 ## Example
 The following sample code initializes an Express.js application and connects it to mongodb:
@@ -42,12 +44,16 @@ bluemix.on('error', function(err) {
 bluemix.init(['mongodb']);
 ```
 
+
 ## Reference
+
 ### bluemix.config
 The object `bluemix.config` is automatically initilized at startup and contains the following attributes:
 - `host`, hostname/address of the application
 - `port`, port of the application
 - `tmpDir`, temporary directory of the application
+
+
 
 ### bluemix.getServices(name)
 Returns a list of services matching `name`, which can be a string or a RegExp. Example:
@@ -59,6 +65,7 @@ var a1 = bluemix.getServices('mongodb-2.2');
 var a2 = bluemix.getServices(/mysql/);
 ```
 
+
 ### bluemix.getService(name)
 Returns the first service matching `name`, which can be a string or a RegExp. Example:
 ```js
@@ -69,10 +76,12 @@ var s1 = bluemix.getService('mongodb-2.2');
 var s2 = bluemix.getService(/mysql/);
 ```
 
+
 ### bluemix.init([dependencies])
 Connects to all the available (and supported) services. 
 The method emits a `ready` event upon successful connection all the services and if all the dependencies
 (if any) are satisfied. It emits an `error` event otherwise.
+
 
 ## Supported services
 The following table lists the supported services, which drivers (npm modules) are used to connect and how to access them:
