@@ -1,7 +1,7 @@
 # bluemix
 Node.js helper module for IBM BlueMix. 
 
-This module automates some common intialization task for Node.js applications running
+This module automates some common intialization tasks for Node.js applications running
 on IBM BlueMix. The main features of the module are:
 
 * parsing of common configuration enviroment variales (host, port, temporary directory)

@@ -1,6 +1,6 @@
 {
   "name": "bluemix",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "Node.js utility module for IBM BlueMix",
   "homepage": "https://hub.jazz.net/project/0xfede/node-bluemix",
   "main": "index.js",
