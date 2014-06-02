@@ -1,6 +1,6 @@
 {
   "name": "bluemix",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js helper module for IBM BlueMix",
   "homepage": "https://github.com/0xfede/bluemix",
   "main": "index.js",
